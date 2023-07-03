@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 p-0">
+          <div class="sidebar">
+            <h1>Martin Gulabovski</h1>
+            <div class="profile-image">
+              <input type="picture" style="display: none" />
+              <img src="myPictures/1597826791937.jpg" alt="Profile Picture" />
+            </div>
+            <p>Welcome to my web page portfolio!</p>
+            <ul>
+              <li><a href="myPortfolio.html">Home</a></li>
+              <li><a href="aboutMe.html">About Me</a></li>
+              <li><a href="https://github.com/martingulabovski/Projects" onclick="openProjectsLink(); return false;">Projects</a></li>
+              <li>
+                <a class="dropdown-toggle">Contact</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a onclick="copyText('Martin Gulabovski')"
+                      >Name: Martin Gulabovski</a
+                    >
+                  </li>
+                  <li>
+                    <a onclick="copyText('+389-75-699-656')"
+                      >Phone: +389-75-699-656</a
+                    >
+                  </li>
+                  <li>
+                    <a onclick="copyText('martingulabovski96@gmail.com')"
+                      >Email: martingulabovski96@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/martin-mike-gulabovski-6736511b4/" target="_blank" onclick="copyText('LinkedIn: linkedin.com/in/martin');">LinkedIn Profile</a>
+
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-9"></div>
+      </div>
+    </div>
+    <a href="index.html"><button class="go-back-btn"></button></a>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
